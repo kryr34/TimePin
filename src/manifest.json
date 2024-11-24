@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "TimePin",
+    "version": "1.0",
+    "description": "記錄播放的時間戳並添加註解。",
+    "permissions": ["storage", "activeTab", "scripting", "contextMenus"],
+    "host_permissions": ["https://*/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "pic/icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

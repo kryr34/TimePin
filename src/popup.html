@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TimePin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans p-4">
+  <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+    <h1 class="text-2xl font-bold mb-4">TimePin</h1>
+    <textarea
+      id="note"
+      class="w-full border border-gray-300 rounded-lg p-2 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+      placeholder="添加註解..."
+    ></textarea>
+    <button
+      id="save"
+      class="w-full bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition"
+    >
+      保存
+    </button>
+    <ul id="recordList" class="mt-4 space-y-4"></ul>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
